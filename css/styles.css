@@ -10,7 +10,7 @@
   position: relative;
 }
 
-li {
+li, p {
   display: inline-block;
   font-family: 'Raleway';
 }
@@ -43,7 +43,28 @@ ul {
 .logo {
   margin-left: 50px;
 }
+
+.rotate {
+  animation: rotation infinite 4s both;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(50deg);
+  }
+  from {
+    transform: rotate(50deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 /*                 END OF NAVIGATION                    */
+
 .about-us {
   background-image: url(../img/desk.jpeg);
   background-position: center;
@@ -52,20 +73,25 @@ ul {
 }
 
 .our-goal {
-  margin-top: 200px;
+  margin-top: 240px;
   height: 300px;
   position: relative;
 }
 
-.our-goal::before {
-  position: absolute;
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -ms-filter: blur(4px);
-  -o-filter: blur(4px);
-  filter: blur(4px);
+.goal-para {
+  font-size: 18px;
+  background-color: white;
+  height: 180px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 40px;
 }
 
-.goal-para {
-  position: absolute;
+/*            END OF OUR GOALS           */
+
+.texture {
+  background-image: url(../img/texture1.jpeg);
+  background-attachment: fixed;
+  background-size: contain;
+  height: 470px;
 }
