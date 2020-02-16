@@ -50,3 +50,22 @@ ul {
   background-attachment: fixed;
   height: 700px;
 }
+
+.our-goal {
+  margin-top: 200px;
+  height: 300px;
+  position: relative;
+}
+
+.our-goal::before {
+  position: absolute;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  filter: blur(4px);
+}
+
+.goal-para {
+  position: absolute;
+}
