@@ -3,11 +3,12 @@
 
 /*                    IMPORTS                         */
 #header {
-  margin-top: 30px;
+  background-color: lightyellow;
 }
 
 .row {
   position: relative;
+  border-bottom: black solid 1px;
 }
 
 li, p {
@@ -15,7 +16,7 @@ li, p {
   font-family: 'Raleway';
 }
 
-a {
+a, #contact .btn {
   color: white;
 }
 
@@ -28,6 +29,9 @@ h1 {
   font-weight: 200;
   font-size: 32px;
   margin-bottom: 40px;
+}
+
+h1, .fas {
   color: black;
 }
 
@@ -37,7 +41,6 @@ ul {
 
 .fas {
   margin-top: 15px;
-  color: black;
 }
 
 .logo {
@@ -72,6 +75,8 @@ ul {
   height: 700px;
 }
 
+/*                  END OF MAIN                        */
+
 .our-goal {
   margin-top: 240px;
   height: 300px;
@@ -80,18 +85,40 @@ ul {
 
 .goal-para {
   font-size: 18px;
-  background-color: white;
+  background-color: lightyellow;
   height: 180px;
   padding-top: 40px;
-  padding-right: 20px;
+  padding-right: 20px; 
   padding-left: 40px;
+  text-shadow: gray 1px 1px;
+}
+
+#goals {
+  background-color: lightyellow;
 }
 
 /*            END OF OUR GOALS           */
+#examples {
+  height: 500px;
+}
 
-.texture {
-  background-image: url(../img/texture1.jpeg);
-  background-attachment: fixed;
-  background-size: contain;
-  height: 470px;
+#examples .carousel {
+  margin-top: 85px;
+}
+
+.exam-para {
+  margin-top: 120px;
+}
+
+/*            END OF EXAMPLES              */
+
+#contact {
+  background-color: lightyellow;
+}
+#contact .row {
+  border-bottom: none;
+}
+
+#contact .btn {
+  background-color: black;
 }
